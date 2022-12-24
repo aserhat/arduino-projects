@@ -13,3 +13,13 @@ A small monitoring to display whether or not our plants need water.
 
 ## Guides
 [Arduino emoji plant water monitor](https://www.youtube.com/watch?v=Lu18ejG4lPs&list=PLfepOSKQbViPB_8Yr7kDBgKA44wIgmPIb&index=1&t=1263s)
+
+## IDE Setup
+* Connect device to USB Port
+* Tools => Board => Arduino AVR Boards => Arduino Nano
+* Tools => Port => /dev/cu.usbserial-110
+* Tools => Processor => ATmega328P (Old Bootloader)
+* Tools => Programmer => Arduino as ISP
+* Write code
+* Verify
+* Upload
