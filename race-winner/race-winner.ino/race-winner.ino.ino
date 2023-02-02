@@ -43,6 +43,8 @@ void setup() {
 
 void loop() {
   // change sensorValue to equal what we read from the sensor 
+  drawLine();
+
   sensorValue = digitalRead(sensorPin);
   sensorValue2 = digitalRead(sensorPin2);
   //print the value to the seial monitor
@@ -53,6 +55,7 @@ void loop() {
       Serial.println("Sensor 1 Motion detected!"); 
       drawOne();
       state = HIGH;       // update variable state to HIGH
+      delay(5000);
     }
   } 
   else {
@@ -68,6 +71,7 @@ void loop() {
       Serial.println("Sensor 2 Motion detected!"); 
       drawTwo();
       state2 = HIGH;       // update variable state to HIGH
+      delay(5000);
     }
   } 
   else {
@@ -77,8 +81,7 @@ void loop() {
     }
   }
  
-  delay(5000);
-  drawLine();
+  
 }
 
 void drawOne(){
