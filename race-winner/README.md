@@ -11,6 +11,8 @@ Two motion sensors and an LED Matrix which show which cars wins the race in my s
 ## Libraries Used
 * [LedControl](http://wayoda.github.io/LedControl/)
 
+## Connection Layout
+![](./diagrams/layout.png)
 ## IDE Setup
 * Connect device to USB Port
 * Tools => Board => Arduino AVR Boards => Arduino Nano
